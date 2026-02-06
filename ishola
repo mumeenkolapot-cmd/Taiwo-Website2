@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwo Integrated Resources Limited | Premium Red Palm Oil Nigeria</title>
+    <meta name="description" content="High-quality hygienic red palm oil from fresh palm fruits. Bulk and retail sales in 25-liter kegs and other sizes. Trusted Nigerian supplier.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #C41E3A;
+            --deep-red: #8B0000;
+            --fresh-orange: #FF6B35;
+            --natural-green: #2E7D32;
+            --light-green: #4CAF50;
+            --cream: #FFF8E7;
+            --dark-text: #1a1a1a;
+            --gray-text: #555;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary-red), var(--fresh-orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--deep-red);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 0.7rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: var(--natural-green);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--deep-red);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--cream) 0%, #fff 100%);
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: var(--deep-red);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-content h1 span {
+            color: var(--natural-green);
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-text);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            color: var(--dark-text);
+        }
+
+        .hero-feature i {
+            color: var(--natural-green);
+            font-size: 1.25rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-red), var(--deep-red));
+            color: white;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-red);
+            color: var(--primary-red);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-red);
+            color: white;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .oil-container {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 107, 53, 0.2), transparent 70%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .oil-drop {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--fresh-orange) 50%, #FF8C42 100%);
+            border-radius: 50% 50% 50% 5%;
+            transform: rotate(-45deg);
+            box-shadow: 0 20px 40px rgba(196, 30, 58, 0.3), inset -10px -10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .oil-drop::after {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 20%;
+            width: 30%;
+            height: 20%;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: rotate(-45deg) translateY(0px); }
+            50% { transform: rotate(-45deg) translateY(-20px); }
+        }
+
+        .floating-badge {
+            position: absolute;
+            background: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow-lg);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge-1 {
+            top: 10%;
+            left: 0;
+            color: var(--natural-green);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .badge-2 {
+            bottom: 20%;
+            right: 0;
+            color: var(--primary-red);
+            animation: float 5s ease-in-out infinite 1s;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--deep-red);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--gray-text);
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--light-gray), #e0e0e0);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image-content {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .about-image-content i {
+            font-size: 4rem;
+            color: var(--natural-green);
+            margin-bottom: 1rem;
+        }
+
+        .about-image-content h3 {
+            color: var(--deep-red);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--primary-red);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            min-width: 150px;
+        }
+
+        .experience-badge .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+        }
+
+        .experience-badge .text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            color: var(--deep-red);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--gray-text);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--cream), #fff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-red);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            border: 2px solid rgba(196, 30, 58, 0.1);
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            color: var(--dark-text);
+            margin-bottom: 0.25rem;
+        }
+
+        .step-content p {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            margin: 0;
+        }
+
+        /* Products Section */
+        .products {
+            background: linear-gradient(to bottom, var(--cream), var(--white));
+        }
+
+        .products-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-red), var(--fresh-orange));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+            top: -50%;
+            left: -50%;
+        }
+
+        .product-image i {
+            font-size: 4rem;
+            color: rgba(255,255,255,0.9);
+            z-index: 1;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--natural-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            font-size: 1.5rem;
+            color: var(--deep-red);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-size {
+            color: var(--fresh-orange);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features li {
+            padding: 0.5rem 0;
+            color: var(--gray-text);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .product-features li:last-child {
+            border-bottom: none;
+        }
+
+        .product-features i {
+            color: var(--natural-green);
+            font-size: 0.9rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: var(--deep-red);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .product-price span {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            font-weight: 400;
+        }
+
+        .product-cta {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--white);
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-red), var(--fresh-orange));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--cream), #fff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--primary-red);
+            border: 2px solid rgba(196, 30, 58, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            color: var(--deep-red);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--gray-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: linear-gradient(to bottom, var(--white), var(--cream));
+        }
+
+        .gallery-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--light-gray), #e0e0e0);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .gallery-placeholder i {
+            font-size: 3rem;
+            color: var(--natural-green);
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+
+        .gallery-placeholder h4 {
+            color: var(--deep-red);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(139, 0, 0, 0.9), transparent);
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--white);
+            padding: 4rem 2rem;
+        }
+
+        .testimonials-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-red);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 4rem;
+            color: var(--cream);
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            color: var(--gray-text);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-red), var(--fresh-orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .author-info h4 {
+            color: var(--deep-red);
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--gray-text);
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--deep-red), #6b0000);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .contact-info > p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1.25rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: white;
+        }
+
+        .contact-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details p, .contact-details a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: white;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--deep-red);
+        }
+
+        .btn-white:hover {
+            background: var(--cream);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp-lg {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp-lg:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-form-container h3 {
+            color: var(--deep-red);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-red), var(--deep-red));
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--fresh-orange);
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .footer-section p, .footer-section a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--fresh-orange);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Action Buttons */
+        .fab-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 999;
+        }
+
+        .fab {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .fab-whatsapp {
+            background: #25D366;
+        }
+
+        .fab-phone {
+            background: var(--primary-red);
+        }
+
+        .fab:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        .fab-tooltip {
+            position: absolute;
+            right: 70px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .fab:hover .fab-tooltip {
+            opacity: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero-container,
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .oil-container {
+                width: 250px;
+                height: 250px;
+            }
+
+            .oil-drop {
+                width: 150px;
+                height: 150px;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
+                gap: 1.5rem;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero-content h1 span {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .fab-container {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .fab {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: var(--natural-green);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-oil-can"></i>
+                </div>
+                <div class="logo-text">
+                    Taiwo Integrated
+                    <span>Resources Limited</span>
+                </div>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Order Now</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1>
+                    Premium Red Palm Oil
+                    <span>Processed with Hygiene & Care in Nigeria</span>
+                </h1>
+                <p class="hero-subtitle">
+                    High-quality palm oil processed hygienically from fresh palm fruits. 
+                    Trusted by households, restaurants, and bulk traders across Nigeria.
+                </p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Natural & Fresh</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Hygienic Processing</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Bulk & Retail Available</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://wa.me/2348012345678?text=Hello%20Taiwo%20Integrated%20Resources,%20I%20want%20to%20order%20palm%20oil" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Order on WhatsApp
+                    </a>
+                    <a href="tel:+2348012345678" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Call to Order
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in">
+                <div class="oil-container">
+                    <div class="oil-drop"></div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-leaf"></i>
+                        100% Organic
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-award"></i>
+                        Best Quality
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image fade-in">
+                <div class="about-image-content">
+                    <i class="fas fa-industry"></i>
+                    <h3>Modern Processing Facility</h3>
+                    <p>State-of-the-art hygiene standards</p>
+                </div>
+                <div class="experience-badge">
+                    <span class="number">10+</span>
+                    <span class="text">Years of<br>Excellence</span>
+                </div>
+            </div>
+
+            <div class="about-content fade-in">
+                <h3>Committed to Quality Since Day One</h3>
+                <p>
+                    Taiwo Integrated Resources Limited is a trusted name in Nigeria's palm oil industry. 
+                    We specialize in producing high-quality red palm oil processed under strict hygienic 
+                    conditions from carefully selected fresh palm fruits.
+                </p>
+                <p>
+                    Our modern processing facility combines traditional knowledge with contemporary 
+                    hygiene standards to deliver palm oil that retains its natural nutrients, rich color, 
+                    and authentic taste that Nigerian households and businesses trust.
+                </p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Fresh Harvest</h4>
+                            <p>Handpicked palm fruits from trusted farms</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Clean Processing</h4>
+                            <p>Hygienic extraction methods</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Quality Testing</h4>
+                            <p>Lab-checked for purity standards</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Fast Delivery</h4>
+                            <p>Quick dispatch to your location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="section-header fade-in">
+            <h2>Our Products & Pricing</h2>
+            <p>Available in various sizes to meet your needs, from household use to bulk commercial orders</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    <i class="fas fa-oil-can"></i>
+                    <span class="product-badge">Best Seller</span>
+                </div>
+                <div class="product-info">
+                    <h3>Standard Keg</h3>
+                    <span class="product-size">25 Liters</span>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Perfect for households</li>
+                        <li><i class="fas fa-check"></i> Sealed for freshness</li>
+                        <li><i class="fas fa-check"></i> Easy to store</li>
+                        <li><i class="fas fa-check"></i> Long shelf life</li>
+                    </ul>
+                    <div class="product-price">
+                        ₦28,000 <span>/ keg</span>
+                    </div>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20order%2025-liter%20palm%20oil%20keg" class="btn btn-primary product-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <div class="product-image" style="background: linear-gradient(135deg, #2E7D32, var(--natural-green));">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="product-badge" style="background: var(--primary-red);">Popular</span>
+                </div>
+                <div class="product-info">
+                    <h3>Retail Bottle</h3>
+                    <span class="product-size">5 Liters</span>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Ideal for small families</li>
+                        <li><i class="fas fa-check"></i> Easy pour spout</li>
+                        <li><i class="fas fa-check"></i> Food-grade container</li>
+                        <li><i class="fas fa-check"></i> Same premium quality</li>
+                    </ul>
+                    <div class="product-price">
+                        ₦6,000 <span>/ bottle</span>
+                    </div>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20order%205-liter%20palm%20oil" class="btn btn-primary product-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <div class="product-image" style="background: linear-gradient(135deg, #8B4513, #D2691E);">
+                    <i class="fas fa-warehouse"></i>
+                    <span class="product-badge" style="background: var(--fresh-orange);">Wholesale</span>
+                </div>
+                <div class="product-info">
+                    <h3>Bulk Order</h3>
+                    <span class="product-size">100+ Liters</span>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Special bulk pricing</li>
+                        <li><i class="fas fa-check"></i> For traders & restaurants</li>
+                        <li><i class="fas fa-check"></i> Flexible quantities</li>
+                        <li><i class="fas fa-check"></i> Delivery available</li>
+                    </ul>
+                    <div class="product-price">
+                        Contact Us <span>for pricing</span>
+                    </div>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20inquire%20about%20bulk%20palm%20oil%20order" class="btn btn-primary product-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us">
+        <div class="section-header fade-in">
+            <h2>Why Choose Taiwo Integrated?</h2>
+            <p>We stand out through our unwavering commitment to quality, hygiene, and customer satisfaction</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Fresh & Natural</h3>
+                <p>Made from freshly harvested palm fruits within 24 hours of picking to preserve nutrients and flavor</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3>Quality Control</h3>
+                <p>Every batch undergoes strict quality testing to ensure purity, color consistency, and food safety standards</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h3>Fair Pricing</h3>
+                <p>Competitive prices without compromising quality. Transparent pricing for both retail and bulk orders</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Reliable Supply</h3>
+                <p>Consistent stock availability with fast delivery options to keep your kitchen or business running smoothly</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-sparkles"></i>
+                </div>
+                <h3>Hygienic Process</h3>
+                <p>Modern stainless steel equipment and sanitized handling ensure contaminant-free, food-safe palm oil</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Customer Support</h3>
+                <p>Responsive service via phone and WhatsApp. We value long-term relationships with every customer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-header fade-in">
+            <h2>Our Process Gallery</h2>
+            <p>See how we transform fresh palm fruits into premium red palm oil</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-tree"></i>
+                    <h4>Fresh Palm Fruits</h4>
+                    <p>Harvested at peak ripeness</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Fresh Harvest</h4>
+                    <p>Sourced from sustainable farms</p>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Processing Stage</h4>
+                    <p>Modern hygienic extraction</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Processing</h4>
+                    <p>Clean, mechanized pressing</p>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-tint"></i>
+                    <h4>Quality Testing</h4>
+                    <p>Lab verification for purity</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Quality Check</h4>
+                    <p>Testing color, acidity, purity</p>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-oil-can"></i>
+                    <h4>Finished Product</h4>
+                    <p>Pure red palm oil ready for sale</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Final Product</h4>
+                    <p>Rich color, authentic taste</p>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-boxes"></i>
+                    <h4>Packaging</h4>
+                    <p>Sealed for freshness</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Packaging</h4>
+                    <p>Food-grade containers</p>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-truck-loading"></i>
+                    <h4>Delivery</h4>
+                    <p>Ready for dispatch</p>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Dispatch</h4>
+                    <p>Delivered to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header fade-in">
+            <h2>What Our Customers Say</h2>
+            <p>Trusted by households, restaurants, and traders across Nigeria</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "The quality is consistent and the color is perfect. My customers always compliment 
+                    the taste of my stews. I've been buying the 25-liter kegs for my restaurant for 2 years now."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AC</div>
+                    <div class="author-info">
+                        <h4>Aunty Chioma</h4>
+                        <p>Restaurant Owner, Lagos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Finally found a supplier who delivers exactly what they promise. The oil is fresh, 
+                    no impurities, and their WhatsApp response is fast. Highly recommended for bulk buyers."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MO</div>
+                    <div class="author-info">
+                        <h4>Mr. Okafor</h4>
+                        <p>Palm Oil Trader, Onitsha</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "I buy the 5-liter bottles for my family. The packaging is convenient and the oil 
+                    lasts long without changing color. Their hygiene standards really show in the product."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">FA</div>
+                    <div class="author-info">
+                        <h4>Mrs. Adeyemi</h4>
+                        <p>Regular Customer, Ibadan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h2>Ready to Order?</h2>
+                <p>Get in touch with us today. We respond quickly on WhatsApp and phone calls.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/2348012345678" target="_blank">+234 801 234 5678</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Call</h4>
+                            <a href="tel:+2348012345678">+234 801 234 5678</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Industrial Estate, Lagos-Ibadan Expressway<br>Ogun State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-buttons">
+                    <a href="https://wa.me/2348012345678?text=Hello%20Taiwo%20Integrated%20Resources,%20I%20want%20to%20place%20an%20order" class="btn btn-whatsapp-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:+2348012345678" class="btn btn-white">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-container fade-in">
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Thank you! We will contact you shortly.
+                </div>
+                <h3>Send an Inquiry</h3>
+                <form id="inquiryForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="e.g., 08012345678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (Optional)</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">I'm interested in</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="retail">Retail (5-25 liters)</option>
+                            <option value="bulk">Bulk Order (100+ liters)</option>
+                            <option value="trader">Becoming a Distributor</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us what you need..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Taiwo Integrated Resources Ltd</h4>
+                <p>Your trusted partner for premium quality red palm oil in Nigeria. Hygienically processed, fairly priced, reliably delivered.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="#" style="margin-right: 1rem;"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" style="margin-right: 1rem;"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#products">25-Liter Kegs</a></li>
+                    <li><a href="#products">5-Liter Bottles</a></li>
+                    <li><a href="#products">Bulk Orders</a></li>
+                    <li><a href="#products">Retail Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>
+                    <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> +234 801 234 5678<br>
+                    <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> info@taiwointegrated.com<br>
+                    <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Ogun State, Nigeria
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Taiwo Integrated Resources Limited. All rights reserved. | RC: 12345678</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="https://wa.me/2348012345678?text=Hello%20Taiwo%20Integrated%20Resources" class="fab fab-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="fab-tooltip">Chat on WhatsApp</span>
+        </a>
+        <a href="tel:+2348012345678" class="fab fab-phone">
+            <i class="fas fa-phone"></i>
+            <span class="fab-tooltip">Call Now</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+
+        // Scroll Animation (Fade in elements)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form Submission Handler
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would normally send data to a server
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            const successMsg = document.getElementById('successMessage');
+            successMsg.classList.add('show');
+            
+            // Reset form
+            e.target.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 5000);
+            
+            // In a real implementation, you would send this to your backend
+            // or use a service like Formspree, Netlify Forms, etc.
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add current year to footer copyright
+        document.querySelector('.footer-bottom p').innerHTML = 
+            `&copy; ${new Date().getFullYear()} Taiwo Integrated Resources Limited. All rights reserved. | RC: 12345678`;
+    </script>
+</body>
+</html>
